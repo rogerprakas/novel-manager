@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Books - Nila Prakash Novels</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-extrabold text-2xl tracking-tighter text-slate-900">
+                    NP<span class="text-indigo-600">.</span>
+                </a>
+
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="text-slate-600 hover:text-slate-900 font-medium">Home</a>
+                    <a href="index.html#contact" class="text-slate-600 hover:text-slate-900 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold mb-4">
+                Book Store
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-4">Buy Nila Prakash Books</h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-600">
+                Explore bestselling novels, new releases, and reader favorites. Add your favorite stories to your
+                collection.
+            </p>
+        </div>
+    </section>
+
+    <!-- Book Grid -->
+    <section class="pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Book 1 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 1
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Whispers of the Moon</h3>
+                        <p class="text-slate-600 mb-4">
+                            A beautifully written emotional journey through love, loss, and rediscovery.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹499</span>
+                            <button onclick="buyBook('Whispers of the Moon')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 2
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Echoes of Silence</h3>
+                        <p class="text-slate-600 mb-4">
+                            A gripping tale of hidden truths, family secrets, and the courage to confront the past.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹599</span>
+                            <button onclick="buyBook('Echoes of Silence')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 3
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">The Last Chapter</h3>
+                        <p class="text-slate-600 mb-4">
+                            A powerful novel about endings, beginnings, and the stories we carry within us.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹549</span>
+                            <button onclick="buyBook('The Last Chapter')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-cyan-100 to-sky-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 4
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Beyond the Horizon</h3>
+                        <p class="text-slate-600 mb-4">
+                            A moving story of ambition, dreams, and the quiet battles that shape us.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹649</span>
+                            <button onclick="buyBook('Beyond the Horizon')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 5
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Fragments of Forever</h3>
+                        <p class="text-slate-600 mb-4">
+                            A heartfelt contemporary novel about memories, healing, and lasting connections.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹699</span>
+                            <button onclick="buyBook('Fragments of Forever')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div
+                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden border border-slate-200">
+                    <div
+                        class="h-72 bg-gradient-to-br from-violet-100 to-fuchsia-100 flex items-center justify-center text-slate-500 text-xl font-semibold">
+                        Book Cover 6
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Shadows in Bloom</h3>
+                        <p class="text-slate-600 mb-4">
+                            A poetic and suspenseful novel where beauty and darkness exist side by side.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-indigo-600">₹579</span>
+                            <button onclick="buyBook('Shadows in Bloom')"
+                                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Nila Prakash Novels</h3>
+                    <p class="text-sm text-slate-400 mt-1">Find your next unforgettable story.</p>
+                </div>
+
+                <div class="flex flex-wrap gap-6 text-sm font-medium">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="index.html#about" class="hover:text-white transition-colors">About Author</a>
+                    <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 mt-8 pt-6 text-center text-sm text-slate-500">
+                © 2026 Nila Prakash Novels. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="rogerjs.js"></script>
+</body>
+
+</html>
